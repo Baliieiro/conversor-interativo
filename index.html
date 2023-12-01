@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./script.js" defer></script>
+  <title>DevClub - currency converter</title>
+</head>
+
+<body>
+  <main>
+    <img src="./assets/logo.gif" alt="gif-logo" class="gif-logo">
+    <section class="convert-container">
+
+
+      <label for="convert-from">Converter <b>de</b></label>
+      <select id="convert-from" name="currency" class="convert-from">
+        <option value="real">R$ Real Brasileiro</option>
+        <!-- <option value="euro">€ Euro</option>
+          <option value="dolar">US$ Dólar Americano</option>
+          <option value="pounds">£ Libra</option>
+          <option value="bitcoin">₿ Bitcoin</option> -->
+      </select>
+
+      <label for="convert-to">Converter <b>para</b></label>
+      <select id="convert-to" name="currency" class="convert-to">
+        <option value="dolar">US$ Dólar Americano</option>
+        <option value="real">R$ Real Brasileiro</option>
+        <option value="euro">€ Euro</option>
+        <option value="pounds">£ Libra</option>
+        <option value="bitcoin">₿ Bitcoin</option>
+      </select>
+
+      <label for="convert-value">Valor</label>
+      <input type="text" name="convert-value" id="convert-value" class="convert-value" placeholder="R$ 10.000,00" />
+
+      <button type="submit" class="button-convert">Converter</button>
+
+      <div class="container">
+        <div class="sub-div">
+          <img class="img-currency-to-be-converted" src="./assets/brasil.png" alt="Descrição da imagem 1">
+          <p class="name-currency-to-be-converted">Real</p>
+          <span class="value-to-be-converted">R$ 10.000,00</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="50" viewBox="0 0 35 50" fill="none">
+          <path d="M17.5 49.9386L0 28.0905H10V0H25V28.0905H35L17.5 49.9386Z" fill="#772FD3" />
+        </svg>
+        <div class="sub-div">
+          <img class="img-currency-converted" src="./assets/estados-unidos.png" alt="Descrição da imagem 2">
+          <p class="name-currency-converted">Dólar Americano</p>
+          <span class="value-converted">$ 2,032.52</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
